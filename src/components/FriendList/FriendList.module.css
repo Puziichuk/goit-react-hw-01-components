@@ -18,15 +18,17 @@
 .statusOnline,
 .statusOffline {
   display: block;
-  width: 20px;
-  height: 20px;
+  /* width: 20px;
+  height: 20px; */
   border-radius: 50%;
-  background-color: green;
+  color: rgb(36, 248, 8);
   margin: 0 15px 0 15px;
+  size: 30px;
+  font-size: 38px;
 }
 
 .statusOffline {
-  background-color: red;
+  color: rgb(248, 8, 8);
 }
 
 .avatar {

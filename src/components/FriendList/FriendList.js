@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./FriendList.module.css";
+import { GiWorld } from "react-icons/gi";
 
 const FriendList = ({ friends }) => (
   <ul className={styles.friend_list}>
@@ -10,7 +11,10 @@ const FriendList = ({ friends }) => (
           className={
             friend.isOnline ? styles.statusOnline : styles.statusOffline
           }
-        ></span>
+        >
+          {" "}
+          <GiWorld />
+        </span>
         <img className={styles.avatar} src={friend.avatar} alt="" width="48" />
         <p className={styles.name}>{friend.name}</p>
       </li>

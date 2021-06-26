@@ -2,13 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Profile.module.css";
 
+import { BsGeoAlt } from "react-icons/bs";
+
 const Profile = ({ name, tag, location, avatar, stats }) => (
   <div className={styles.profile}>
     <div className={styles.description}>
       <img src={avatar} alt="user avatar" className={styles.avatar} />
       <p className={styles.name}>{name}</p>
       <p className={styles.tag}>@{tag}</p>
-      <p className={styles.location}>{location}</p>
+      <p className={styles.location}>
+        <BsGeoAlt />
+        {location}
+      </p>
     </div>
 
     <ul className={styles.stats}>
